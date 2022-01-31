@@ -17,5 +17,6 @@ function getRandomHexColor() {
 
 function onStopClick(e) {
     start.disabled = false;
-    clearInterval(timerId);
+  clearInterval(timerId);
+  
 }
