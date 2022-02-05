@@ -4,12 +4,14 @@ const form = document.querySelector('.form');
 let firstDelay = document.querySelector('[name="delay"]');
 let delayStep = document.querySelector('[name="step"]');
 let amount = document.querySelector('[name="amount"]');
-let delay = Number(firstDelay.value);
+
 
 form.addEventListener('submit', onFormSubmit);
 
 function onFormSubmit(e) {
   e.preventDefault();
+  
+  let delay = Number(firstDelay.value);
 
   for (let position = 1; position <= amount.value; position += 1){
   if(position > 1){
